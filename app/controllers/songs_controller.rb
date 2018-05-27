@@ -18,7 +18,7 @@ class SongsController < ApplicationController
       redirect_to artist_songs_path(params[:artist_id])
     else 
       @song = Song.find(params[:id])
-    end
+    end 
   end
 
   def new
